@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* :root { */
+    /* color-scheme: light dark; */
+/* } */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* font-weight: 600; */
+}
+
+body {
+    background: linear-gradient(#ffdad5, #fff7f9);
+    font-family: "Inter", sans-serif;
+    /* background-color: light-dark(#fff, #444); */
+    /* color: light-dark(#444, #fff); */
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 750;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 111px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    color: #666;
+    font-size: 15px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    resize: none;
+}
+
+.contact-inputs:focus {
+    border: 1.5px solid sandybrown;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    gap: 10px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+@media (max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
+}
